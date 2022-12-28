@@ -6,6 +6,7 @@ const Home = () => {
     <div className="row center">
       <div className="card">
         <div className="cards">
+          {/* Map section */}
           {data.map(({ id, image, firsttext, rate, price }) => {
             return (
               <div key={id} className="checked">
