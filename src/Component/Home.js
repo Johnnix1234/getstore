@@ -7,7 +7,7 @@ const Home = () => {
       <div className="card">
         <div className="cards">
           {/* Map section */}
-          {data.map(({ id, image, firsttext, rate, price }) => {
+          {data.map(({ id, image, firsttext, rate, price, Numreviews }) => {
             return (
               <Product
                 id={id}
@@ -15,6 +15,7 @@ const Home = () => {
                 firsttext={firsttext}
                 rate={rate}
                 price={price}
+                Numreviews={Numreviews}
               />
             );
           })}

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-const Product = ({ image, id, firsttext, rate, price }) => {
+import Rating from "./Rating";
+const Product = ({ image, id, firsttext, price, rate, Numreviews }) => {
   return (
     <div key={id} className="checked">
       <Link to={`/product/${id}`}>
@@ -9,7 +10,10 @@ const Product = ({ image, id, firsttext, rate, price }) => {
         <Link to="/product">
           <h2>{firsttext}</h2>
         </Link>
-        <h4>{rate}</h4>
+
+        <span>
+          <h4>{<Rating rate={rate} Numreviews={Numreviews} />}</h4>
+        </span>
         <h5>{price}</h5>
       </div>
     </div>

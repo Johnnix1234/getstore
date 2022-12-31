@@ -40,6 +40,11 @@ img.medium {
   color: #f0c040;
   margin: 0.1rem;
 }
+
+.rating span:last-child {
+  color: #1d1c1c;
+  font-size: 0.8rem;
+}
 .center {
   justify-content: center;
 }
